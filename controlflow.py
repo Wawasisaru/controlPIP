@@ -1,15 +1,26 @@
 # Write a Python program that takes a list of strings 
 # as input and outputs the number of times each string appears in the list, 
 # using a dictionary and conditional statements.
-words_string = ['pen', 'heals', 'jacket', 'pen', 'bag', 'bag', 'shoe']
-counts = {}
-for x in words_string:
-    if x in counts:
-        counts[x] += 1
+# words_string = ['pen', 'heals', 'jacket', 'pen', 'bag', 'bag', 'shoe']
+# counts = {}
+# for x in words_string:
+#     if x in counts:
+#         counts[x] += 1
+#     else:
+#         counts[x] = 1
+# for x, count in counts.items():
+#     print(x, count)
+def median_num(numbers):
+    length=len(numbers.sort())
+    if(length%2 == 0):
+        numbers((length)/2)
     else:
-        counts[x] = 1
-for x, count in counts.items():
-    print(x, count)
+        return numbers[(length-1)/2]
+    numbers = [17, 10, 6, 13, 4,8, 19]
+    print(median_num(numbers))
+
+    
+    
 
 # Write a Python program that takes a list of numbers as 
 # input and outputs the median of the numbers 
@@ -23,6 +34,8 @@ if length % 2 == 0:
 else:
     median = num_sorted[length//2]
 print (f"The median is {median}")
+# 
+
 
 # Write a Python program that takes a list of numbers as 
 # input and outputs the second largest number in the list using 
